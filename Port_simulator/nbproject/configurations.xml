@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>define.h</itemPath>
+      <itemPath>input_output.h</itemPath>
+      <itemPath>operations.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <itemPath>back_music.wav</itemPath>
+      <itemPath>charge.png</itemPath>
+      <itemPath>close_poke.png</itemPath>
+      <itemPath>discharge.png</itemPath>
+      <itemPath>flash.png</itemPath>
+      <itemPath>led_sound.wav</itemPath>
+      <itemPath>mapa.png</itemPath>
+      <itemPath>mapa2.png</itemPath>
+      <itemPath>open_poke.png</itemPath>
+      <itemPath>poke_font.ttf</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>Main.c</itemPath>
+      <itemPath>input_output.c</itemPath>
+      <itemPath>operations.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <commandlineTool>gcc</commandlineTool>
+          <linkerLibItems>
+            <linkerOptionItem>`pkg-config --libs allegro-5.0`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_color-5.0`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_primitives-5.0`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_image-5.0`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro-5.0`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_acodec-5.0`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_audio-5.0`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_color-5.0`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_dialog-5.0`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_font-5.0`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_image-5.0`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_main-5.0`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_memfile-5.0`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_physfs-5.0`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_primitives-5.0`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_ttf-5.0`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="Main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="back_music.wav" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="charge.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="close_poke.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="define.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="discharge.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="flash.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="input_output.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="input_output.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="led_sound.wav" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mapa.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mapa2.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="open_poke.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="operations.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operations.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="poke_font.ttf" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="Main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="back_music.wav" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="charge.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="close_poke.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="define.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="discharge.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="flash.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="input_output.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="input_output.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="led_sound.wav" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mapa.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mapa2.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="open_poke.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="operations.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operations.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="poke_font.ttf" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
