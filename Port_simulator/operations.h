@@ -3,7 +3,8 @@
 
 #include "define.h"
 #include "input_output.h"
-
+#include <stdbool.h>
+#define FPS2 (3)
 #define ESPACIO_LAT (70)
 #define ESPACIO_INT (20)
 #define LARGO_X (90)
