@@ -2,11 +2,56 @@
 
 void blink_all(void * element_pointer, void * background,void * led_on_void, void * led_off_void,int elementos, int repetir)
 {
-    int counter, count_repeat;
+    int counter;
     element * elemento = element_pointer;
     ALLEGRO_BITMAP * led_on = led_on_void;
     ALLEGRO_BITMAP * led_off = led_off_void;
-    
+    ALLEGRO_TIMER * timer = NULL;
+    ALLEGRO_EVENT_QUEUE * event_line = NULL;
+    ALLEGRO_EVENT event_timer;
+    int abort=false;
+    //Creo la cola de eventos
+    if (!(event_line=al_create_event_queue()))
+    {
+        fprintf(stderr,"Event queue not created");
+        al_destroy_event_queue(event_line);
+        return -1;
+    }
+        // creo un timer
+    if (!(timer =al_create_timer(1/FPS2)))
+    {
+        fprintf(stderr,"Timer2 not created");
+        al_destroy_event_queue(event_line);
+        al_destroy_timer(timer);
+       return -1;
+    }
+        if (!al_install_keyboard())
+    {
+        fprintf(stderr, "Keyboard not installed");
+        return -1;
+    }    
+    al_register_event_source(event_line,al_get_keyboard_event_source()); 
+    al_register_event_source(event_line,al_get_timer_event_source(timer));
+    while (!abort)
+    {
+        if(al_get_next_event(event_line,&event_timer))
+        {
+            if(ALLEGRO_EVENT==ALLEGRO_EVENT_TIMER)
+            {
+                 for (counter = 0 ;counter < elementos; ++ counter)
+                {
+                    bit_switch(elemento + counter);
+                }
+                print_display(element_pointer,(void *) background,led_on_void,led_off_void, 11);    //acá esta el problema con el back y frontend
+                //COSAS PARA IMPRIMIR
+            }
+            else if (ALLEGRO_EVENT == ALLEGRO_EVENT_KEY_DOWN)
+            {
+                abort=true;
+            }
+        }
+    }
+    /*
     for (count_repeat = 0; count_repeat < repetir ; ++count_repeat)
     {
     
@@ -17,6 +62,7 @@ void blink_all(void * element_pointer, void * background,void * led_on_void, voi
         print_display(element_pointer,(void *) background,led_on_void,led_off_void, 11);    //acá esta el problema con el back y frontend
         al_rest(0.3);
     }
+    */
 }
 void set_all( void * element_pointer, int elementos)
 {
@@ -48,11 +94,6 @@ void bit_switch (void * element_pointer)
     if (elemento->led_on)
     {
         elemento->led_on = false;
-    }
-    else if (!elemento->led_on)
-    {
-        elemento->led_on = true;
-	
     }
 }
 

@@ -13,14 +13,11 @@
                    projectFiles="true">
       <itemPath>back_music.wav</itemPath>
       <itemPath>charge.png</itemPath>
-      <itemPath>close_poke.png</itemPath>
       <itemPath>discharge.png</itemPath>
       <itemPath>flash.png</itemPath>
       <itemPath>led_sound.wav</itemPath>
       <itemPath>mapa.png</itemPath>
       <itemPath>mapa2.png</itemPath>
-      <itemPath>open_poke.png</itemPath>
-      <itemPath>poke_font.ttf</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -89,8 +86,6 @@
       </item>
       <item path="charge.png" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="close_poke.png" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="define.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="discharge.png" ex="false" tool="3" flavor2="0">
@@ -107,13 +102,9 @@
       </item>
       <item path="mapa2.png" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="open_poke.png" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="operations.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="operations.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="poke_font.ttf" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -142,8 +133,6 @@
       </item>
       <item path="charge.png" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="close_poke.png" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="define.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="discharge.png" ex="false" tool="3" flavor2="0">
@@ -160,13 +149,9 @@
       </item>
       <item path="mapa2.png" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="open_poke.png" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="operations.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="operations.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="poke_font.ttf" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>
