@@ -272,7 +272,7 @@ int main(void)
 
     display_background = background1;
     
-    al_play_sample(back_music,0.75,0,1.0,ALLEGRO_PLAYMODE_LOOP,NULL); 
+    al_play_sample(back_music,2.75,0,1.0,ALLEGRO_PLAYMODE_LOOP,NULL); 
     
     if ( print_instructions ("trifont.ttf","trifont.ttf","white") )
     {
