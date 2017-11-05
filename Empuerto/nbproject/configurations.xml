@@ -12,12 +12,14 @@
                    displayName="Resource Files"
                    projectFiles="true">
       <itemPath>back_music.wav</itemPath>
-      <itemPath>charge.png</itemPath>
-      <itemPath>discharge.png</itemPath>
-      <itemPath>flash.png</itemPath>
+      <itemPath>led_off.png</itemPath>
+      <itemPath>led_on.png</itemPath>
       <itemPath>led_sound.wav</itemPath>
+      <itemPath>led_sound_2.wav</itemPath>
       <itemPath>mapa.png</itemPath>
       <itemPath>mapa2.png</itemPath>
+      <itemPath>navi.png</itemPath>
+      <itemPath>navi_talk.png</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -84,23 +86,27 @@
       </item>
       <item path="back_music.wav" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="charge.png" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="define.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="discharge.png" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="flash.png" ex="false" tool="3" flavor2="0">
       </item>
       <item path="input_output.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="input_output.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="led_off.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="led_on.png" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="led_sound.wav" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="led_sound_2.wav" ex="false" tool="3" flavor2="0">
       </item>
       <item path="mapa.png" ex="false" tool="3" flavor2="0">
       </item>
       <item path="mapa2.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="navi.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="navi_talk.png" ex="false" tool="3" flavor2="0">
       </item>
       <item path="operations.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -131,23 +137,27 @@
       </item>
       <item path="back_music.wav" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="charge.png" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="define.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="discharge.png" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="flash.png" ex="false" tool="3" flavor2="0">
       </item>
       <item path="input_output.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="input_output.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="led_off.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="led_on.png" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="led_sound.wav" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="led_sound_2.wav" ex="false" tool="3" flavor2="0">
       </item>
       <item path="mapa.png" ex="false" tool="3" flavor2="0">
       </item>
       <item path="mapa2.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="navi.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="navi_talk.png" ex="false" tool="3" flavor2="0">
       </item>
       <item path="operations.c" ex="false" tool="0" flavor2="0">
       </item>

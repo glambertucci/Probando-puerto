@@ -23,26 +23,30 @@ void blink_all(void * element_pointer, void * background,void * led_on_void, voi
                         {
                             abort = true ;
                         }    
+                        else if (event.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
+                        {
+                            abort= true ;
+                        }
                     } 
                    
+                        
+                       
                     x_countTime = clock();    //actualizo el timer
                     x_milliseconds=x_countTime-x_startTime;
                     x_seconds=(x_milliseconds/(CLOCKS_PER_SEC));
-
                       
-
-                        if (!((x_seconds*2)%1)) //es multiplicado por dos para que titile dos veces por segundo
+                    if (!((x_seconds*2)%1)) //es multiplicado por dos para que titile dos veces por segundo
+                    {
+                        if (!(x_seconds==safe_print))	
                         {
-                            if (!(x_seconds==safe_print))	
+                            safe_print=x_seconds;
+                            for (counter = 0 ;counter < elementos; ++ counter)
                             {
-                            	safe_print=x_seconds;
-                            	for (counter = 0 ;counter < elementos; ++ counter)
-                                {
-                                    bit_switch(elemento + counter);
-                                }
-                                print_display(element_pointer,(void *) background,led_on_void,led_off_void, 11);
+                                bit_switch(elemento + counter);
                             }
+                            print_display(element_pointer,(void *) background,led_on_void,led_off_void, 11);
                         }
+                    }
 
                 }
  

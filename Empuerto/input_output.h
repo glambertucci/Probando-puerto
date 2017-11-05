@@ -7,7 +7,17 @@
 #include <allegro5/allegro_color.h>
 #include <allegro5/allegro_font.h>
 #include <allegro5/allegro_ttf.h>
-
+//Define para el display instructivo
+#define TITLE (0)
+#define INDIVIDUAL_LEDS (1)
+#define BLINK (2)
+#define ON (3)
+#define OFF (4)
+#define MOUSE (5)
+#define BACKGROUND (6)
+#define LEAVE (7)
+#define INSTRUCTIONS (8)
+#define MAX_MESSAGES (9)
 
 // Se fija si al hacer click, tocaste algun boton. Si lo tocaste devuelve 'true', sino devuelve 'false'
 //

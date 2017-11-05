@@ -1,18 +1,8 @@
 #include "input_output.h"
 
-//Define para el display instructivo
 
-#define TITLE (0)
-#define INDIVIDUAL_LEDS (1)
-#define BLINK (2)
-#define ON (3)
-#define OFF (4)
-#define MOUSE (5)
-#define BACKGROUND (6)
-#define LEAVE (7)
-#define INSTRUCTIONS (8)
 
-#define MAX_MESSAGES (9)
+
 
 //FUNCIONES 
 
